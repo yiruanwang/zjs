@@ -10,45 +10,6 @@ module.exports = {
     }, plugins: [
         new UglifyJsPlugin(),
     ], devServer: {
-        // example
-        contentBase: path.join(__dirname, "example"),
         port: 7000
     }
 };
-
-
-
-
-
-
-
-
-
-
-// var HtmlWebpackPlugin = require('html-webpack-plugin');
-// var webpack = require('webpack');
-// var path = require('path');
-
-// var config = {
-//     entry: "./src/index.js",
-//     output: {
-//         // path: __dirname + "/dist/js",
-//         path: path.join(__dirname, './dist/js'),
-//         filename: 'zjs.min.js'
-//     },
-//     module: {
-//         loaders: [
-//             {
-//                 test: /\.js$/,
-//                 loader: 'babel',
-//                 exclude: /node_modules/
-//             },
-//         ], plugins: [
-//             new webpack.BannerPlugin('yiruan.wang')
-//         ]
-//     }
-
-
-// };
-
-// module.exports = config;
