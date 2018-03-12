@@ -1,6 +1,6 @@
 {
   "name": "yzjs",
-  "version": "1.1.103",
+  "version": "1.1.104",
   "description": "zjs.yiruan.wang",
   "main": "dist/js/zjs.min.js",
   "repository": {
@@ -10,7 +10,8 @@
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "host": "node_modules/.bin/webpack-dev-server webpack --mode development"
   },
   "keywords": [
     "zjs"

@@ -9,7 +9,11 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     }, plugins: [
         new UglifyJsPlugin(),
-    ]
+    ], devServer: {
+        // example
+        contentBase: path.join(__dirname, "example"),
+        port: 7000
+    }
 };
 
 

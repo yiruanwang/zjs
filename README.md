@@ -12,12 +12,14 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# install 
 npm install
 
-# build for production with minification
+# build
 npm run build
 
+#example
+npm run host
 ```
 
 ##Zjs 
