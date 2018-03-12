@@ -1,8 +1,9 @@
 {
   "name": "yzjs",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "zjs.yiruan.wang",
   "main": "dist/js/zjs.min.js",
+  "repository": "git@github.com:yiruanwang/zjs.git",
   "scripts": {
     "start": "webpack --config webpack.config.js",
     "dev": "webpack --mode development",

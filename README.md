@@ -1,6 +1,11 @@
 #Zjs.js
 
 
+[![compatibility](https://img.shields.io/badge/compatibility-IE8%2B-orange.svg)]()[![GitHub package version](https://img.shields.io/github/package-json/v/yiruanwang/Zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yiruanwang/zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs)[![npm](https://img.shields.io/npm/v/yzjs.svg?style=plastic)](https://www.npmjs.com/package/yzjs)
+
+
+
 
 ## Build Setup
 
