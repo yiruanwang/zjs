@@ -1,8 +1,10 @@
 #Zjs.js
 
 
-[![compatibility](https://img.shields.io/badge/compatibility-IE8%2B-orange.svg)]()[![GitHub package version](https://img.shields.io/github/package-json/v/yiruanwang/Zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yiruanwang/zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs)[![npm](https://img.shields.io/npm/v/yzjs.svg?style=plastic)](https://www.npmjs.com/package/yzjs)
+[![compatibility](https://img.shields.io/badge/compatibility-IE8%2B-orange.svg)]() [![GitHub package version](https://img.shields.io/github/package-json/v/yiruanwang/Zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs)
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yiruanwang/zjs.svg?style=plastic)](https://github.com/yiruanwang/zjs) [![npm](https://img.shields.io/npm/v/yzjs.svg?style=plastic)](https://www.npmjs.com/package/yzjs) 
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg?style=plastic)](https://github.com/yiruanwang/zjs) [![NPM Downloads](https://img.shields.io/npm/dm/yzjs.svg?style=plastic)](https://www.npmjs.com/package/yzjs)
+
 
 
 
