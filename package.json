@@ -1,6 +1,6 @@
 {
   "name": "yzjs",
-  "version": "1.1.107",
+  "version": "1.1.108",
   "description": "zjs.yiruan.wang",
   "main": "dist/js/zjs.min.js",
   "repository": {
@@ -22,6 +22,7 @@
   "author": "yshxw@qq.com",
   "license": "MIT",
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.3",
     "html-webpack-plugin": "3.0.6",
     "webpack": "4.1.1",
     "webpack-cli": "2.0.11",
