@@ -12,7 +12,17 @@ module.exports = {
         filename: 'js/zjs.min.js',
         path: path.resolve(__dirname, 'dist')
     }, plugins: [
-        new UglifyJsPlugin(),
+        // new UglifyJsPlugin(),
+        new UglifyJsPlugin({
+            uglifyOptions: {
+                ie8: true,
+                output: {
+                    comments: false,
+                    beautify: false
+                },
+                warnings: false
+            }
+        }),
         new CopyWebpackPlugin(
             [
                 {from: 'favicon.ico', to: 'favicon.ico'},
