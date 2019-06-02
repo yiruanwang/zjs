@@ -28,7 +28,7 @@ module.exports = {
         new CopyWebpackPlugin(
             [
                 {from: 'favicon.ico', to: 'favicon.ico'},
-                // {from: 'example/index.html', to: 'index.html'},
+                 {from: 'static/README.md', to: 'README.md'},
                 {from: 'static', to: 'static'},
             ],
             {ignore: [], copyUnmodified: true}
