@@ -38,7 +38,7 @@ module.exports = {
                 collapseWhitespace:true //折叠空白区域 也就是压缩代码
             },
             hash:true,
-            // inject:'head',
+            inject:'head',
             title:'播放器',
             template: './example/index.html', //模板地址
             filename: 'index.html',

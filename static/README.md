@@ -1,7 +1,7 @@
 # M3u8+MP4 解析播放器
 * 播放器链接地址说明
 ```language
-http://youname.com/?type=ck&url=https://cn3.zhongshanchemical.com/hls/20190409/6322654a2f16a17837184fe06b1b955b/1554742206/index.m3u8
+http://youname.com/?type=ck&url=https://cn3.zhongshanchemical.com/hls/20190409/6322654a2f16a17837184fe06b1b955b/1554742206/index.m3u8&skip=100
 
 ```
 - 参数说明
@@ -10,6 +10,8 @@ http://youname.com/?type=ck&url=https://cn3.zhongshanchemical.com/hls/20190409/6
    指定使用ck播放器播放
    type=dp
    指定使用dp播放器播放 
+   skip=100
+   首次观看影片跳过100秒
 ```
  - ~~type=ck and type=dp~~
  ```language

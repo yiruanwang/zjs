@@ -41,9 +41,17 @@ const cookie = {
         return cookie;
     }
 }
+const jsempty =function (obj){
+    if(typeof obj == "undefined" || obj == null || obj == ""){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 export {
     gettype,
     trim,
-    cookie
+    cookie,
+    jsempty
 }
