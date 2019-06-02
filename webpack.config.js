@@ -71,6 +71,17 @@ module.exports = {
                 ],
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
+            },{
+                test:/\.css$/,
+                // use: extractTextPlugin.extract({
+                //     fallback: "style-loader",
+                //     use: "css-loader"
+                // }),
+                // // css分离后这里需要重新配置，下面就注释了
+                use:[
+                    {loader: "style-loader"},
+                    {loader:"css-loader"}
+                ]
             }
         ]
     },

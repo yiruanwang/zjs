@@ -1,4 +1,9 @@
 require("jquery");
+import css from './css/player.css'
+import dpcss from '../static/dplayer/DPlayer.min.css'
+// import dpjs from '../static/dplayer/DPlayer.min'
+// require("../static/dplayer/DPlayer.min.js");
+
 window.Zjs = window.$ = window.zjs = window.Yzjs = window.yzjs = window.Yz = window.yz = window.$$app = require("./js/play.zjs");
 console.log(`${'\n'} %c Qsjs ${VERSION}  %c http://qsjs.yiruan.wang ${'\n'}${'\n'}`, 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
 
@@ -6,11 +11,20 @@ var isiPad = navigator.userAgent.match(/iPad|iPhone|Android|Linux|iPod/i) != nul
 // var urls = 'https://cn3.zhongshanchemical.com/hls/20190409/6322654a2f16a17837184fe06b1b955b/1554742206/index.m3u8';
 // var urls = 'http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4';
 var pic = '';
-var jump = '';
+var jump = '';//'https://cn3.zhongshanchemical.com/hls/20190409/6322654a2f16a17837184fe06b1b955b/1554742206/index.m3u8';
 var _peerId = '', _peerNum = 0, _totalP2PDownloaded = 0, _totalP2PUploaded = 0;
 // var dptype="hls";
 var playerType= zjs.gettype('type');
 var urls= zjs.gettype('url');
+
+if(playerType==null && urls==null)
+{
+    urls = 'http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4';
+}
+if(urls==null | urls=="")
+{
+    urls = 'http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4';
+}
 
 if (isiPad) {
     var pic = 'dp/loading.gif'
