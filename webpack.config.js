@@ -7,22 +7,24 @@ const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const gitRevisionPlugin = new GitRevisionPlugin();
 
 module.exports = {
-    entry: './src/index.js',
+    mode: "production",
+    entry: ['@babel/polyfill', './src/index.js'],
+    // entry: './src/index.js',
     output: {
         filename: 'js/zjs.min.js',
         path: path.resolve(__dirname, 'dist')
     }, plugins: [
-        // new UglifyJsPlugin(),
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                ie8: true,
-                output: {
-                    comments: false,
-                    beautify: false
-                },
-                warnings: false
-            }
-        }),
+        new UglifyJsPlugin(),
+        // new UglifyJsPlugin({
+        //     uglifyOptions: {
+        //         ie8: true,
+        //         output: {
+        //             comments: false,
+        //             beautify: false
+        //         },
+        //         warnings: false
+        //     }
+        // }),
         new CopyWebpackPlugin(
             [
                 {from: 'favicon.ico', to: 'favicon.ico'},
@@ -33,10 +35,10 @@ module.exports = {
         ),
         new HtmlWebpackPlugin({
             minify:{
-                collapseWhitespace:false //折叠空白区域 也就是压缩代码
+                collapseWhitespace:true //折叠空白区域 也就是压缩代码
             },
             hash:true,
-            inject:'head',
+            // inject:'head',
             title:'播放器',
             template: './example/index.html', //模板地址
             filename: 'index.html',
@@ -61,6 +63,14 @@ module.exports = {
                     loader: 'expose-loader',
                     options: '$'
                 }]
+            },
+            {
+                test: /\.js$/,
+                include: [
+                    path.resolve(__dirname, 'src')
+                ],
+                exclude: /(node_modules|bower_components)/,
+                loader: "babel-loader",
             }
         ]
     },
