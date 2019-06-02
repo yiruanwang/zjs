@@ -1,6 +1,6 @@
 {
   "name": "yzjs",
-  "version": "1.1.106",
+  "version": "1.1.107",
   "description": "zjs.yiruan.wang",
   "main": "dist/js/zjs.min.js",
   "repository": {
@@ -9,9 +9,9 @@
   },
   "scripts": {
     "start": "webpack --config webpack.config.js",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "host": "node_modules/.bin/webpack-dev-server webpack --mode development"
+    "d": "webpack --mode development",
+    "b": "webpack --mode production",
+    "s": "webpack-dev-server --config webpack.config.js"
   },
   "keywords": [
     "zjs"
@@ -22,9 +22,9 @@
   "author": "yshxw@qq.com",
   "license": "MIT",
   "devDependencies": {
-    "html-webpack-plugin": "^3.0.6",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.11",
-    "webpack-dev-server": "^3.1.1"
+    "html-webpack-plugin": "3.0.6",
+    "webpack": "4.1.1",
+    "webpack-cli": "2.0.11",
+    "webpack-dev-server": "3.1.1"
   }
 }
